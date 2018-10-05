@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Emotional Intelligence Self Assessment</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul id='navbarButtons' class="nav navbar-nav navbar-right">
+				<li><a href="#" id="aboutPage">About</a></li>
+				<li><a href="#" id="signUp">Sign Up</a>
+          <div class="form-popup" id="myForm">
+            <form class="form-container">
+              <h1>Sign Up</h1>
+
+              <label for="username"><b>Username</b></label>
+              <input id='usernameInput' type="text" placeholder="Enter Username" name="username" required>
+
+              <label for="age"><b>Age</b></label>
+              <input id='ageInput' type="text" placeholder="Enter Age" name="Age" required>
+
+              <button id='signUpUser' type="submit" class="btn">Sign Up</button>
+              <button type="submit" class="btn cancel" id='signUpClose'>Close</button>
+            </form>
+          </div>
+        </li>
+        <li><a href="#" id="allUsers">All Users</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="jumbotron">
+	<div class="container">
+		<h1>Get to know yourself</h1>
+		<p id="jumbotronText">"we should treat education as a weak-link network, where strengthening the weakest links has the most positive outcome for all"</p>
+		<br>
+		<p><a class="btn btn-primary btn-lg" id='assessButton' role="button">Assess yourself »</a> <a id='learnMoreButton' class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+	</div>
+</div>
+
+<section id="lowerSection" class="call-to-action">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-4">
+  			<span class="glyphicon glyphicon-link glyphicon-large" aria-hidden="true"></span>
+  			<h3>Why?</h3>
+  			<p>The goal here is to use the knowledge of your 'weakest link' and create a plan or next steps to follow in strengthening your chain of emotional intelligence.</p>
+  		</div>
+  		<div class="col-md-4">
+  			<span class="glyphicon glyphicon-user glyphicon-large" aria-hidden="true"></span>
+  			<h3>How?</h3>
+  			<p>something about self awareness</p>
+  		</div>
+  		<div class="col-md-4">
+  			<span class="glyphicon glyphicon-globe glyphicon-large" aria-hidden="true"></span>
+  			<h3>Versatility</h3>
+  			<p>some stuff.</p>
+  		</div>
+  	</div>
+  </div>
+
+</section>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="src/api.js" charset="utf-8"></script>
+    <script src="src/controller.js" charset="utf-8"></script>
+    <script src="src/user.js" charset="utf-8"></script>
+    <script src="src/result.js" charset="utf-8"></script>
+    <script src="src/index.js" charset="utf-8"></script>
+  </body>
+</html>
